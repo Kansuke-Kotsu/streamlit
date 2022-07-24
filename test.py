@@ -85,30 +85,10 @@ def show_cards(nums):
             st.image(shuffle_deck[0])
             shuffle_deck.pop(0)
 
-def draw_botton():
-    if st.button("1枚ドロー", key=2):
-        show_cards(nums=1)
-
-    if st.button("2枚ドロー", key=3): 
-        show_cards(nums=2)
-  
-    if st.button("3枚ドロー", key=4): 
-        show_cards(nums=3)
-
-    draw_botton()
-
 
 def main():
     show_cards(nums=5)
-    #text = st.text_input("表示したい単語を入力してください")
-    if 'count' not in st.session_state: 
-        st.session_state.count = 0 #countがsession_stateに追加されていない場合，0で初期化
-
-    increment = st.button('Increment')
-    if increment:
-        st.session_state.count += 1 #値の更新
-    draw_botton()
-        
+   
 
 
 if __name__ == '__main__':
