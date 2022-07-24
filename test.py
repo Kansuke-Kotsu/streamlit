@@ -1,15 +1,15 @@
 import streamlit as st
 from bs4 import BeautifulSoup
-import requests
+#import requests
 from urllib.request import urlopen
 import numpy as np
 from random import random
 import random
-import cv2
-import io
+
+#import io
 from PIL import Image
 from email.mime import image
-import base64
+#import base64
 import streamlit.components.v1 as stc
 
 
