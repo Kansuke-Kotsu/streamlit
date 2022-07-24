@@ -88,6 +88,8 @@ def test(URL):
 def main():
     URL = st.text_input("URLを入力してください")
     test(URL=URL)
+    if st.button("再実行"):
+        None
      
 
         
